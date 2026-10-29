@@ -899,6 +899,8 @@ preference_settings! {
     double_click_components: bool = true, PAGE_DESIGN => check_id("settings.double_click_components");
     /// Reopen the saved designs that were open when the app was last closed (#5542).
     reopen_designs: bool = true, PAGE_GENERAL;
+    /// Desktop: show the startup splash screen before opening the main window.
+    show_splash: bool = true, PAGE_GENERAL;
     /// Those designs' files, in tab order, as the last quit left them.
     open_designs: Vec<String> = Vec::new(), PAGE_GENERAL;
     /// The largest STEP or import file opened, in MB (#4086): from the default (512) up to 16 GB.
